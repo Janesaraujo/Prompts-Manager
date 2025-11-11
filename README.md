@@ -1,66 +1,68 @@
 # Prompt Manager
 
-Gerenciador de prompts desenvolvido como uma aplicação web moderna e responsiva. Ideal para quem trabalha com modelos de linguagem e precisa organizar, buscar e utilizar comandos de IA com rapidez.
+A modern and responsive web application for managing AI prompts. Designed for professionals working with language models who need quick access to organized, searchable, and editable prompts.
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Status: Frontend Only](https://img.shields.io/badge/status-frontend--only-green.svg)
 ![Tech: HTML/CSS/JS](https://img.shields.io/badge/tech-HTML%2FCSS%2FJS-orange.svg)
 
-## Visão Geral
+## Overview
 
-O Prompt Manager oferece:
+Prompt Manager offers:
 
-- Organização centralizada em uma barra lateral (`.sidebar`)
-- Busca rápida por título (`#search-input`)
-- Edição direta com campos `contenteditable`
-- Botões para salvar (`#btn-save`) e copiar (`#btn-copy`)
-- Design responsivo com layout Off-Canvas em mobile
+- Centralized organization in a dedicated sidebar (`.sidebar`)
+- Instant search by title (`#search-input`)
+- Inline editing with `contenteditable` fields (`#prompt-title`, `#prompt-content`)
+- Clear buttons to save (`#btn-save`) and copy (`#btn-copy`) prompt content
+- Responsive design with collapsible sidebar and Off-Canvas layout on mobile
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **HTML5 semântico** (`header`, `aside`, `main`)
-- **CSS com variáveis e Flexbox**
-- **JavaScript** para lógica de interface (`script.js`)
-- **Media Queries** para responsividade
+- **Semantic HTML5** (`header`, `aside`, `main`)
+- **CSS with custom properties and Flexbox**
+- **JavaScript** for interface logic (`script.js`)
+- **Media Queries** for full responsiveness
 
-## Design e Desenvolvimento
+## Design & Development
 
-- Interface baseada em [design da Rocketseat no Figma](https://www.figma.com/community/file/1554529095872857492)
-- Codificação assistida por GitHub Copilot no VSCode
-- Integração com MCP Server para conversão de design em código
+- Interface inspired by [Rocketseat's Figma design](https://www.figma.com/community/file/1554529095872857492)
+- Code accelerated with GitHub Copilot in VSCode
+- Integrated with MCP Server for design-to-code translation
 
-## Como Rodar o Projeto
+## How to Run the Project
 
-Pré-requisitos: navegador moderno
+Requirements: any modern web browser
 
 ```bash
 git clone https://github.com/Janesaraujo/Prompts-Manager
 cd Prompts-Manager
 ```
 
-Abra o arquivo `index.html` no navegador ou use o Live Server no VSCode para rodar localmente.
+Open the `index.html` file in your browser, or use **Live Server** in VSCode for local development with hot reload.
 
-Versão online: [janesaraujo.github.io/Prompts-Manager](https://janesaraujo.github.io/Prompts-Manager/)
+Live version available at: [janesaraujo.github.io/Prompts-Manager](https://janesaraujo.github.io/Prompts-Manager/)
 
-## Contribuição
+## Contributing
 
-Contribuições são bem-vindas! Para colaborar:
+Contributions are welcome! To contribute:
 
-1. Faça um fork do repositório
-2. Crie uma branch: `git checkout -b minha-feature`
-3. Commit suas alterações: `git commit -m 'Nova funcionalidade'`
-4. Push para sua branch: `git push origin minha-feature`
-5. Abra um Pull Request
+1. Fork this repository
+2. Create a new branch: `git checkout -b my-feature`
+3. Commit your changes: `git commit -m 'Add new feature'`
+4. Push to your branch: `git push origin my-feature`
+5. Open a Pull Request
 
 ## Roadmap
 
-- [x] Interface responsiva
-- [x] Busca por título
-- [x] Edição inline com `contenteditable`
-- [ ] Suporte a tags nos prompts
-- [ ] Exportação de prompts em JSON
-- [ ] Modo escuro
+- [x] Responsive interface
+- [x] Title-based search
+- [x] Inline editing with `contenteditable`
+- [ ] Tag support for prompts
+- [ ] Export prompts to JSON
+- [ ] Dark mode
 
-## Licença
+## License
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
+
+Let me know if you'd like a version with GitHub Actions, deployment instructions, or internationalization support. I can tailor it further to match your goals.
