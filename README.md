@@ -1,77 +1,66 @@
-Prompt Manager 
-Um gerenciador de prompts desenvolvido como uma aplicação web moderna e responsiva, projetado para facilitar a organização, busca e utilização de seus comandos e instruções de IA. Este projeto foi concebido para ser uma ferramenta rápida e intuitiva para quem trabalha com modelos de linguagem e precisa de acesso imediato aos seus prompts mais utilizados.
+# Prompt Manager
 
- **Visão Geral e Funcionalidades**
-O Prompt Manager oferece uma interface limpa e intuitiva, inspirada em padrões modernos de aplicativos de produtividade, para:
+Gerenciador de prompts desenvolvido como uma aplicação web moderna e responsiva. Ideal para quem trabalha com modelos de linguagem e precisa organizar, buscar e utilizar comandos de IA com rapidez.
 
-Organização Centralizada: Gerencie e visualize sua lista de prompts em uma barra lateral dedicada **(.sidebar)**.
+![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![Status: Frontend Only](https://img.shields.io/badge/status-frontend--only-green.svg)
+![Tech: HTML/CSS/JS](https://img.shields.io/badge/tech-HTML%2FCSS%2FJS-orange.svg)
 
-Busca Rápida: Utilize o campo de busca por título **(#search-input)** para filtrar e encontrar prompts instantaneamente.
+## Visão Geral
 
-Edição Direta: A interface principal permite editar o título **(#prompt-title)** e o conteúdo **(#prompt-content)** diretamente na página, graças ao atributo **contenteditable="true"**.
+O Prompt Manager oferece:
 
-Ações Essenciais: Botões claros para Salvar **(#btn-save)** o prompt e Copiar **(#btn-copy)** seu conteúdo para a área de transferência com um clique.
+- Organização centralizada em uma barra lateral (`.sidebar`)
+- Busca rápida por título (`#search-input`)
+- Edição direta com campos `contenteditable`
+- Botões para salvar (`#btn-save`) e copiar (`#btn-copy`)
+- Design responsivo com layout Off-Canvas em mobile
 
-Design Responsivo: A barra lateral é colapsável, otimizando o espaço em telas desktop, e adota o padrão **Off-Canvas** em mobile para uma excelente usabilidade em qualquer dispositivo.
+## Tecnologias Utilizadas
 
-**Análise Técnica (Stack & Estrutura)**
-O projeto é uma aplicação Frontend Pura, focada em performance e usabilidade, construída com as seguintes tecnologias e técnicas:
+- **HTML5 semântico** (`header`, `aside`, `main`)
+- **CSS com variáveis e Flexbox**
+- **JavaScript** para lógica de interface (`script.js`)
+- **Media Queries** para responsividade
 
-**Estrutura (HTML)**
-HTML5 Semântico: Uso de tags como **header**, **aside** e **main** para estruturar a aplicação de forma lógica e acessível.
+## Design e Desenvolvimento
 
-**Interatividade via JS**: A lógica da aplicação, como a gestão da lista **(#prompt-list)**, e o comportamento dos botões de menu **(#btn-open, #btn-collapse)** são controlados por um arquivo JavaScript externo **(script.js)**.
+- Interface baseada em [design da Rocketseat no Figma](https://www.figma.com/community/file/1554529095872857492)
+- Codificação assistida por GitHub Copilot no VSCode
+- Integração com MCP Server para conversão de design em código
 
-**UX com contenteditable**: Os campos de título e conteúdo utilizam o atributo **contenteditable="true"** para edição direta, e **data-placeholder** junto com classes de estado **(.is-empty)** para exibir o texto de sugestão **(placeholder)**.
+## Como Rodar o Projeto
 
-**Estilização (CSS)**
-O design foi arquitetado para ser consistente e manutenível:
+Pré-requisitos: navegador moderno
 
-Variáveis CSS **(:root)**: Uso de **Custom Properties** para definir um Sistema de Design centralizado, controlando paleta de cores **(destaque: --accent-600, base: --gray-*)** e tipografia. Isso facilita a rápida personalização do tema.
+```bash
+git clone https://github.com/Janesaraujo/Prompts-Manager
+cd Prompts-Manager
+```
 
-**Layout Moderno**: O layout é primariamente baseado em **Flexbox (display: flex)** para o posicionamento dinâmico dos componentes principais **(.app, .sidebar, .main)**.
+Abra o arquivo `index.html` no navegador ou use o Live Server no VSCode para rodar localmente.
 
-**Componentização de UI**: Padrões claros para botões **(.btn-primary, .btn-outline)** e estados de hover com transições suaves **(transition: 0.5s)**.
+Versão online: [janesaraujo.github.io/Prompts-Manager](https://janesaraujo.github.io/Prompts-Manager/)
 
-**Media Queries**: O projeto utiliza uma **media query em $$(max-width: 950px)$$** para implementar um design responsivo completo, transformando a barra lateral em um menu lateral **(Off-Canvas) para dispositivos móveis**.
+## Contribuição
 
-**Desenvolvimento e Ferramentas**
-Este projeto demonstra a capacidade de integrar fluxos de trabalho de design e desenvolvimento com o auxílio de Inteligência Artificial:
+Contribuições são bem-vindas! Para colaborar:
 
-**Design Base**: O layout e a interface foram baseados em um projeto de design original da Rocketseat no Figma.
-**https://www.figma.com/community/file/1554529095872857492**
+1. Faça um fork do repositório
+2. Crie uma branch: `git checkout -b minha-feature`
+3. Commit suas alterações: `git commit -m 'Nova funcionalidade'`
+4. Push para sua branch: `git push origin minha-feature`
+5. Abra um Pull Request
 
-**Aceleração com IA**: O processo de codificação da estrutura inicial foi fortemente auxiliado pelo GitHub Copilot no Visual Studio Code (VSCode).
+## Roadmap
 
-**Integração Figma**: Foi utilizado o **MCP Server (Multi-Cursor Platform/Figma Server)** para permitir que o Copilot acessasse o contexto do design do Figma, traduzindo elementos visuais diretamente em código HTML/CSS, otimizando a fase de Design-to-Code.
+- [x] Interface responsiva
+- [x] Busca por título
+- [x] Edição inline com `contenteditable`
+- [ ] Suporte a tags nos prompts
+- [ ] Exportação de prompts em JSON
+- [ ] Modo escuro
 
-**Como Rodar o Projeto**
-Como o Prompt Manager é uma aplicação Frontend pura (HTML, CSS, JS), você não precisa de backend ou dependências complexas para executá-lo.
+## Licença
 
-**Pré-requisitos**
-Um navegador web moderno (Chrome, Firefox, Edge, etc.).
-
-**Instruções**
-Clone o Repositório:
-
-Bash
-
-git clone **https://github.com/Janesaraujo/Prompts-Manager**
-cd prompt-manager
-Abra no Navegador:
-
-Localize o arquivo index.html dentro da pasta clonada.
-
-Dê um duplo clique no arquivo, ou clique com o botão direito e selecione "Abrir com..." (seu navegador preferido).
-
-**O Prompt Manager está hospedado no GitHub Pages e pode ser acessado publicamente**:
-
-**https://janesaraujo.github.io/Prompts-Manager/**
-
-**Alternativa (Recomendado para Devs)**:
-
-Se você tiver o VSCode, instale a extensão Live Server.
-
-Abra o projeto no VSCode e clique em "Go Live" no canto inferior direito para rodar o projeto em um servidor local com hot reload.
-
-O projeto estará acessível em seu navegador, pronto para ser usado!
+Este projeto está licenciado sob a [MIT License](LICENSE).
