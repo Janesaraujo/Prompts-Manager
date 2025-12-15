@@ -42,6 +42,7 @@ Open the `index.html` file in your browser, or use **Live Server** in VSCode for
 
 Live version available at: [janesaraujo.github.io/Prompts-Manager](https://janesaraujo.github.io/Prompts-Manager/)
 ## Project result
+![user interface](images/interface.png)
 ![Prompt Manager Demo](images/demo.gif)
 
 
