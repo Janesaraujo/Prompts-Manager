@@ -41,6 +41,9 @@ cd Prompts-Manager
 Open the `index.html` file in your browser, or use **Live Server** in VSCode for local development with hot reload.
 
 Live version available at: [janesaraujo.github.io/Prompts-Manager](https://janesaraujo.github.io/Prompts-Manager/)
+## Project result
+![Prompt Manager Demo](images/demo.gif)
+
 
 ## Contributing
 
@@ -51,18 +54,3 @@ Contributions are welcome! To contribute:
 3. Commit your changes: `git commit -m 'Add new feature'`
 4. Push to your branch: `git push origin my-feature`
 5. Open a Pull Request
-
-## Roadmap
-
-- [x] Responsive interface
-- [x] Title-based search
-- [x] Inline editing with `contenteditable`
-- [ ] Tag support for prompts
-- [ ] Export prompts to JSON
-- [ ] Dark mode
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-Let me know if you'd like a version with GitHub Actions, deployment instructions, or internationalization support. I can tailor it further to match your goals.
